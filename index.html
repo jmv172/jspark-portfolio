@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="J-SPARK — Young Innovator, Electronics and IoT Developer. Explore technology projects in robotics, automation and innovation.">
+  <title>J-SPARK | Innovate • Build • Inspire</title>
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: #101f33;
+      --blue: #168cff;
+      --cyan: #00d9ff;
+      --white: #f4f8ff;
+      --muted: #a9bad0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(7,17,31,.95);
+      border-bottom: 1px solid #20344d;
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      color: var(--cyan);
+      letter-spacing: 2px;
+    }
+
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { color: var(--muted); font-size: 14px; }
+    nav a:hover { color: var(--cyan); }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 8%;
+      background: radial-gradient(ellipse at top, #123b66, var(--bg) 65%);
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 90px);
+      letter-spacing: 5px;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .hero h1 span { color: var(--cyan); }
+
+    .tagline {
+      color: var(--cyan);
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin: 18px 0;
+    }
+
+    .hero p { max-width: 650px; color: var(--muted); }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 27px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .button:hover { background: #006bd6; }
+
+    section { padding: 75px 8%; }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .section-title span { color: var(--cyan); }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid #203c59;
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--cyan);
+    }
+
+    .card h3 { color: var(--cyan); margin-bottom: 12px; }
+    .card p, .card li { color: var(--muted); font-size: 14px; }
+    .card ul { padding-left: 18px; }
+
+    .tag {
+      display: inline-block;
+      background: #123c62;
+      color: #8ceaff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin: 5px 3px 0 0;
+    }
+
+    .vision {
+      text-align: center;
+      background: linear-gradient(120deg, #102c49, #081728);
+    }
+
+    .vision p { max-width: 750px; margin: auto; color: var(--muted); }
+
+    .contact { text-align: center; }
+    .contact p { color: var(--muted); }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      border-top: 1px solid #20344d;
+      font-size: 13px;
+    }
+
+    @media(max-width:600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="#home">J-SPARK</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1>J-<span>SPARK</span></h1>
+    <div class="tagline">INNOVATE • BUILD • INSPIRE</div>
+    <h2>Young Innovator | Electronics & IoT Developer</h2>
+    <p>
+      Turning ideas into practical technology.
+      Exploring electronics, robotics, programming and
+      intelligent systems to solve real-world challenges.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about">
+      <p>
+        Welcome to J-SPARK, my personal technology portfolio.
+        I am a young technology enthusiast interested in electronics,
+        programming, robotics and Internet of Things (IoT).
+      </p>
+      <p style="margin-top:18px">
+        My goal is to transform creative ideas into practical
+        prototypes that can help people, schools and communities.
+        Through experimentation and continuous learning, I develop
+        projects that combine hardware and software.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Electronics</h3>
+        <p>Arduino, ESP8266, ESP32, sensors, RFID and circuit integration.</p>
+      </article>
+      <article class="card">
+        <h3>Programming</h3>
+        <p>Python, Arduino C/C++, HTML, CSS and JavaScript.</p>
+      </article>
+      <article class="card">
+        <h3>IoT & Automation</h3>
+        <p>Wi-Fi communication, smart monitoring and automated systems.</p>
+      </article>
+      <article class="card">
+        <h3>Software Development</h3>
+        <p>Flask, SQLite, dashboards and hardware-software integration.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>01. Smart Attendance</h3>
+        <p>
+          An RFID-based school attendance prototype designed
+          to identify students individually and record attendance.
+        </p>
+        <span class="tag">ESP8266</span>
+        <span class="tag">RFID</span>
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">SQLite</span>
+      </article>
+
+      <article class="card">
+        <h3>02. Smart Dustbin</h3>
+        <p>
+          A smart waste-management prototype using distance
+          sensing, a motorized lid and Wi-Fi-based control.
+        </p>
+        <span class="tag">ESP8266</span>
+        <span class="tag">HC-SR04</span>
+        <span class="tag">L298N</span>
+        <span class="tag">IoT</span>
+      </article>
+
+      <article class="card">
+        <h3>03. CropGuard</h3>
+        <p>
+          A greenhouse monitoring concept combining sensors,
+          microcontrollers and a web dashboard for crop monitoring.
+        </p>
+        <span class="tag">IoT</span>
+        <span class="tag">Arduino</span>
+        <span class="tag">ESP8266</span>
+        <span class="tag">Agriculture</span>
+      </article>
+
+      <article class="card">
+        <h3>04. Exam Invigilator Robot</h3>
+        <p>
+          A robotics and monitoring project concept combining
+          obstacle detection, video monitoring and human-reviewed alerts.
+        </p>
+        <span class="tag">Robotics</span>
+        <span class="tag">Python</span>
+        <span class="tag">Ultrasonic Sensor</span>
+      </article>
+
+      <article class="card">
+        <h3>05. Crop Separation Pendulum</h3>
+        <p>
+          A physics project exploring oscillatory motion,
+          amplitude, period and simple harmonic motion.
+        </p>
+        <span class="tag">Physics</span>
+        <span class="tag">Mechanics</span>
+        <span class="tag">SHM</span>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="vision" id="vision">
+    <h2 class="section-title">My <span>Vision</span></h2>
+    <p>
+      To become an innovative technology developer who creates
+      useful, affordable and intelligent solutions. I believe
+      that every great invention begins with curiosity, learning
+      and the courage to experiment.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in <span>Touch</span></h2>
+    <p>Interested in technology, collaboration or innovation?</p>
+    <a class="button"
+       href="mailto:nshimiyimanagizzo@gmail.com">
+       Contact J-SPARK
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 J-SPARK | Innovate • Build • Inspire</p>
+  <p>Personal Technology Portfolio</p>
+</footer>
+
+</body>
+</html>
